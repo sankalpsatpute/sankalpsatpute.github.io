@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanklap satpute-developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+body{
+    background-color: black;
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(209, 9, 9);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+nav ul li a:hover{
+    color: lavender;
+    font-size: 1.04rem;
+    
+
+}
+.left{
+    font-size: 1.4rem;
+
+}
+.first{
+    display: flex;
+    justify-content:space-around;
+    margin: 84px 0;
+    }
+    .first div{
+    width: 30%;
+    }
+.leftsection{
+    
+    width: 34px;
+    font-size: 2rem;
+}
+.rightsection img{
+    width: 50%;
+    margin: 54px;
+
+}
+#element{
+    color: blue;
+}
+.AboutMe{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+}
+.AboutMe img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color:white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+    
+button:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
+}
+.Services{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color:white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#f9004d;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor: pointer; 
+}
+.Contact-Me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.Contact-Me p{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.Contact-Me .button-two{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.Contact-Me .button-two:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor: pointer; 
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.Follow-Me{
+    display: flex;
+}
+.Follow-Me a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+}
+.Follow-Me a:hover{
+    transform: scale(1,3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">sankalp portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About-Me">About Me</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact Me">Contact Me</a></li>    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection">
+               <h1>Hi,I'm Sankalp </h1>
+               
+               
+                
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png.png" alt="">
+    
+            </div>
+        </section>
+        <a href="https://sankalpsatpute123.wordpress.com/"><h4>To see my blogs visit here!!</h4></a>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer','FrontEnd Developer', 'Embedded Product Designer','Video Editor'],
+      typeSpeed: 60,
+    });
+  </script>
+</body>
+<!---About section start--->
+<section class="About-Me">
+    <div class="main">
+        <img src="bg.png.png">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h5>Developer and Designer</h5>
+            <p>I'm a Freshman pursuing Electronic And Telecommunication at savitribai phule pune university. I am always ready to have new experiences, meet new people and learn new things. I find the idea of creating value for people and impacting the world through my work gratifying.</p>
+            <button type="button">Let's Talk</button>
+        </div>
+    </div>
+
+</section>
+<!--service section start-->
+<div class="Services">
+    <div class="title">
+        <h2>Services</h2>
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>Every website should be bulit with two primary goals: Firstly, it needs to work across all devices. secondly, it needs to be fast as possible.</p>
+                    <p style="text-align: center;">
+                        <a class="button herf="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+            <i class="fas fa-bars"></i>
+            <h5>Embedded Product Designer</h5>
+            <div class="pra">
+        <p>Designing and developing the embedded systems that are an integral part of the product.
+            Selecting appropriate microcontrollers or processors for the specific requirements of the product.
+            Implementing firmware and software to control and manage the embedded systems.</p>
+                <p style="text-align: center;">
+                    <a class="button" herf="#">Read More</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+                <i class="fas fa-bars"></i>
+                <h5>FrontEnd Development</h5>
+                <div class="pra">
+                    <p>HTML (Hypertext Markup Language): The backbone of web content, defining the structure of a webpage.
+                        CSS (Cascading Style Sheets): Styles and designs HTML elements, enhancing the visual presentation.
+                        JavaScript: Adds interactivity and dynamic features, making web pages responsive.</p>
+                    <p style="text-align: center;">
+                        <a class="button" herf="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
+<!--project section start-->
+<div class="Projects">
+    <div class="title">
+        
+
+
+</div>
+<!--contact section start-->
+<div class="Contact-Me">
+    <p>Let Me Get You A Beautiful website.</p>
+    <a Class="button-two" href="#"></a>
+</div>
+<!--footer section start-->
+<footer>
+    <p>Sankalp Satpute</p>
+    <P>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the better you get.</P>
+    <div class="Follow-Me">
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa-brands fa-linkedin"></a>
+        <a href="#" class="fa fa-github"></a>
+        <a href="#"class="fab fa-instagram"></a>
+
+    </div>
+    <p class="end">CopyRight By Satpute technology Pvt Ltd</p>
+</footer>
+</body>
+</html>
